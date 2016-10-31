@@ -1,0 +1,18 @@
+// Mixins
+// --------------------------
+
+@mixin openSans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin helveticaMedium {
+  font-family: 'HelveticaNeueCyr-Medium', sans-serif;
+}
+
+@mixin helveticaRoman {
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+}
+
+@mixin helveticaLight {
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+}

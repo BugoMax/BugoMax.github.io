@@ -1,0 +1,21 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'HelveticaNeueCyr-Medium', sans-serif;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: 100%; }
+
+p {
+  color: #1E2124;
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h3 {
+  color: #1E2124;
+  font-family: 'HelveticaNeueCyr-Medium', sans-serif; }
