@@ -16,3 +16,7 @@
 @mixin helveticaLight {
   font-family: 'HelveticaNeueCyr-Light', sans-serif;
 }
+
+@mixin bo {
+	border: 10px solid red;
+}

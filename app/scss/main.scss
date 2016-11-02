@@ -8,7 +8,6 @@ html {
 
 body {
 	width: 100%;
-	height: auto;
 	min-height: 100%;
 	margin: 0;
 	font-family: 'HelveticaNeueCyr-Medium', sans-serif;
@@ -22,7 +21,11 @@ p {
 	@include openSans;
 }
 
-h1, h3 {
+h1, h2, h3 {
 	color: $black;
 	@include helveticaMedium;
 }
+
+@import "partials/header";
+@import "partials/home";
+@import "partials/about";
