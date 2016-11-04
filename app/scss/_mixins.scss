@@ -17,6 +17,57 @@
   font-family: 'HelveticaNeueCyr-Light', sans-serif;
 }
 
+@mixin transition {
+	transition: all 0.3s ease-out;
+}
+
 @mixin bo {
-	border: 10px solid red;
+	border: 1px solid red;
+}
+
+@mixin headerBackImg {
+	height: 300px;
+	background-size: 100%;
+}
+
+@mixin headerImg {
+	position: relative;
+	top: 200px;
+	display: block;
+  margin-left: 50%;
+}
+
+@mixin headerH {
+	position: relative;
+	top: -220px;
+	margin-left: 50%;
+	font-size: 60px;
+}
+
+@mixin content {
+	width: 50%;
+	margin-left: 34%;
+	margin-top: 150px;
+}
+
+@mixin nextPage {
+	width: 200px;
+	height: 30px;
+	border: 3px solid $black;
+	margin: 50px auto;
+}
+
+@mixin nextLink {
+	display: block;
+	margin-top: 4px;
+	color: $black;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+@mixin socialLi {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 20px;
 }

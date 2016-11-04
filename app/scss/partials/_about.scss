@@ -6,29 +6,53 @@
 }
 
 .about-header {
-	width: 100%;
-	height: 300px;
-	background: url('/images/bg-9.jpg') no-repeat;
-	background-size: 100%;
+	background: url('/images/bg-9.png') no-repeat;
+	@include headerBackImg;
 }
 
 .about-header__img {
-	position: relative;
-	top: 200px;
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
+	@include headerImg;
 }
 
 .about-header__h {
-	position: relative;
-	top: -220px;
-	text-align: center;
-	font-size: 60px;
+	@include headerH;
 }
 
 .about__content {
-	width: 60%;
-	margin-left: 30%;
-	margin-top: 150px;
+	@include content;
+}
+
+//////////////
+
+.circles {
+	position: relative;
+	width: 100%;
+	border: 3px solid red;
+  margin-bottom: -10px;
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  margin-top: 15px;
+  margin-left: 6%;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.2;
+  border: 3px solid red;
+}
+
+.stron {
+	position: relative;
+	display: block;
+	bottom: 110px;
+	font-size: 18px;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+
+#canvas {
+	display: block;
+	margin: 20px auto;
+  border: 1px solid black;
 }

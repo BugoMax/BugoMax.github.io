@@ -6,68 +6,49 @@
 }
 
 .home-header {
-	height: 300px;
+	@include headerBackImg;
 	background: url('/images/tr.png') no-repeat;
-	background-size: 100%;
 }
 
 .home-header__img {
-	position: relative;
-	top: 200px;
-	display: block;
-  margin-left: 50%;
+	@include headerImg;
 }
 
 .home-header__h {
-	position: relative;
-	top: -220px;
-	margin-left: 50%;
-	font-size: 60px;
+	@include headerH;
 }
 
 .home__content {
-	width: 50%;
-	margin-left: 34%;
-	margin-top: 150px;
+	@include content;
 }
 
-.home__next-page {
-	width: 200px;
-	height: 30px;
-	border: 3px solid $black;
-	margin: 50px auto;
+.next-page {
+	@include nextPage;
 }
 
-.home__next-link {
-	display: block;
-	margin-top: 4px;
-	color: $black;
-	text-align: center;
-	text-decoration: none;
-	font-size: 20px;
+.next-link {
+	@include nextLink;
 }
 
-.home__next-page:hover {
+.next-page:hover {
 	background-color: $black;
 	transition: all 0.3s ease-out;
 }
 
-.home__next-page:hover .home__next-link {
+.next-page:hover .next-link {
 	color: $white;
-	transition: all 0.3s ease-out;
+	@include transition;
 }
 
-.home__social {
+.content__social {
 	width: 300px;
 	margin: 20px auto;
 }
 
-.home__social-li {
-	list-style-type: none;
-	display: inline-block;
-	margin-right: 20px;
+.content__social-li {
+	@include socialLi;
 }
 
-.home__social-links {
+.content__social-links {
 	color: $black;
 }
