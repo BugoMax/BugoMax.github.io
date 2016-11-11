@@ -7,7 +7,8 @@
 
 .home-header {
 	@include headerBackImg;
-	background: url('/images/tr.png') no-repeat;
+	background: url('/images/bg-home.jpg') no-repeat;
+	background-position: 50% 50%;
 }
 
 .home-header__img {
@@ -16,6 +17,7 @@
 
 .home-header__h {
 	@include headerH;
+	@include helveticaMedium;
 }
 
 .home__content {
@@ -49,6 +51,16 @@
 	@include socialLi;
 }
 
+.content__social-links:hover {
+	@include transition;
+	color: #717C87;
+}
+
 .content__social-links {
 	color: $black;
+}
+
+.content__p {
+	font-size: 18px;
+	@include openSans;
 }

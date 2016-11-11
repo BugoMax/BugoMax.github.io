@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BurberShop "Borodinsky</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="inner-page">
+
+<header class="main-header">
+      <div class="container clearfix">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="index.html">Главная</a>
+            </li>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="item.html">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="shop.html">Магазин</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a href="#" class="login">Вход</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="inner-page-title">
+    	  <h1>Вход в личный кабинет</h1>
+    	  <ul class="breadcrumbs">
+    	  	<li>
+    	  		<a href="#">Главная</a>
+    	  	</li>
+    	  	<li class="current">Вход в личный кабинет</li>
+    	  </ul>
+      </div>
+      <div class="inner-content">
+      	<form class="login-form" action="/echo" method="post">
+      	<p>Введите пожалуйста свой логин и пароль.</p>
+        <input type="text" class="icon-user" name="login" placeholder="Логин" required>
+        <input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+        <input type="checkbox" name="remember" id="remember-me">
+        <label for="remember-me">Запомните меня</label>
+        <a href="#" class="restore">Я забыл пароль!</a>
+        <button type="submit" class="btn">Войти</button>
+      </form>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="contacts.html">Как нас найти?</a><br>
+          телефон: +7 (495) 666-02-66
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a href="https://vk.com/club118085826" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="https://www.facebook.com/maxim.vasilevich.9" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="https://www.instagram.com/kepleronweb/" class="social-btn social-btn-inst">Инстаграм</a>
+          </section>
+        <section class="footer-copyright">
+          <p>Дизайн сайта:</p>
+          <a href="#" class="btn">Glukhanko.ru</a>
+        </section>
+      </div>
+    </footer>
+
+    <div class="modal-content">
+      <div class="modal-content-close" title="Закрыть">закрыть</div>
+      <h2 class="model-content-title">Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль.</p>
+      <form class="login-form" action="/echo" method="post">
+        <input type="text" class="icon-user" name="login" placeholder="Логин" required>
+        <input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+        <input type="checkbox" name="remember" id="remember-me">
+        <label for="remember-me">Запомните меня</label>
+        <a href="#" class="restore">Я забыл пароль!</a>
+        <button type="submit" class="btn">Войти</button>
+      </form>
+    </div>
+
+    <div class="modal-content-map">
+      <div class="modal-content-close">закрыть</div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.5754342448977!2d30.383980315589678!3d50.44900839535003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc63160b60cd%3A0x631cd45ce7ccc92e!2z0KHQstGP0YLQvtGI0LjQvdGB0YzQutC40Lkg0L_RgNC-0LIuLCAyLCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1459193743367" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+	
+</body>
+</html>

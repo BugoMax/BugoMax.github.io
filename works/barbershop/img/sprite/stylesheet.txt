@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-ckeck {
+    width: 12px;
+    height: 12px;
+    background-position: -15px -15px;
+}
+
+.sprite-close {
+    width: 21px;
+    height: 21px;
+    background-position: -15px -57px;
+}
+
+.sprite-locked {
+    width: 15px;
+    height: 17px;
+    background-position: -15px -108px;
+}
+
+.sprite-user {
+    width: 15px;
+    height: 15px;
+    background-position: -15px -155px;
+}

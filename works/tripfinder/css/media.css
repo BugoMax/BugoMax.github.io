@@ -1,0 +1,173 @@
+/*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1600px) {
+	.choose_tour .card {
+    width: 530px;
+	  height: 410px;
+	}
+}
+@media only screen and (max-width : 1500px) {
+	.choose_tour .card {
+    width: 490px;
+	  height: 370px;
+	}
+}
+@media only screen and (max-width : 1400px) {
+	.choose_tour .card {
+    width: 430px;
+	  height: 310px;
+	}
+}
+@media only screen and (max-width : 1366px) {
+	.choose_tour .card {
+    width: 450px;
+	  height: 330px;
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.top_header .fc {
+		margin-left: 100px;
+	}
+	.head_footer {
+		top: 440px;
+	}
+	.find_tour .find_tour-row,
+	.find_tour-row .city_name,
+	.find_tour .img-responsive {
+		width: 200px;
+	  height: 200px;
+	  overflow: hidden;
+	  line-height: 200px;
+	}
+	.choose_tour .card {
+		width: 580px;
+	}
+		.news .news_hidden-first {
+		display: none;
+	}
+	.main_footer .footer_first-hidden {
+		display: none;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1002px) {
+	.top_header .fc {
+		margin-left: 100px;
+	}
+	.choose_tour .card {
+		width: 580px;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	.top_header .fc {
+		margin-left: 100px;
+	}
+	.top_header .mail,
+	.top_header .time {
+		display: none;
+	}
+	.logo .logo_text {
+		display: none;
+	}
+	.find_tour .find_tour-row,
+	.find_tour-row .city_name,
+	.find_tour .img-responsive {
+		width: 180px;
+	  height: 180px;
+	  overflow: hidden;
+	  line-height: 180px;
+	  font-size: 19px;
+	}
+	.deal_hidden-block {
+		display: none;
+	}
+	.deal .card {
+		margin: 110px auto;
+	}
+	.choose_tour .card {
+		margin: 0 auto;
+	}
+	.news .card {
+		margin: 70px auto;
+	}
+	.find_tour .find_tour-row {
+		margin: 0 auto;
+	}
+	.main_footer .footer_second-hidden {
+		display: none;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.top_header .fc {
+		margin-left: 50px;
+	}
+	.logo .logo_text {
+		display: none;
+	}
+	.deal_hidden-block {
+		display: none;
+	}
+	.news .news_hidden-second {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 680px) {
+	.top_header .fc {
+		margin-left: 0px;
+	}
+	.top_header .navbar {
+		margin-left: 0px;
+	}
+	.head_footer {
+		top: 455px;
+	}
+}
+
+@media only screen and (max-width : 660px) {
+	.head_footer {
+		top: 440px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px) {
+	.head_footer {
+		top: 405px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+ 
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

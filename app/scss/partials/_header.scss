@@ -3,10 +3,35 @@
 
 .main-header {
 	position: fixed;
-	float: left;
 	height: 100vh;
+	float: left;
 	width: 21.875%;
 	background-color: $gray;
+	overflow-y: auto;
+}
+
+.main-header::-webkit-scrollbar { height: 0; }
+
+.main-header__language {
+	margin-top: -3px;
+	margin-left: 20%;
+}
+
+.main-header__language-en, .main-header__language-ru {
+	display: inline-block;
+	margin-left: 20px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	width: 60px;
+	border: 2px solid white;
+	@include openSans;
+}
+
+.main-header__language-en:hover, .main-header__language-ru:hover {
+	background-color: white;
+	color: $black;
+	@include transition;
 }
 
 .main_header__logo-wrap {
@@ -29,6 +54,8 @@
 .main-header__name, .main-header__proffesion {
 	text-align: center;
 	color: $white;
+	letter-spacing: 2px;
+	@include helveticaMedium;
 }
 
 .main-header__links {
@@ -39,34 +66,98 @@
 
 .main-header__home-link {
 	text-decoration: none;
-	color: #319BD8;
+	color: #2EA1D9;  //319BD8
 	margin-left: 40px;
+	@include helveticaMedium;
+	letter-spacing: 1px;
 }
 
 .main-header__about {
 	text-decoration: none;
 	color: #E04863;
+	@include helveticaMedium;
+	letter-spacing: 1px;
 }
 
 .main-header__li-link {
 	list-style-type: none;
+	@include helveticaMedium;
+	letter-spacing: 1px;
 }
 
 .main-header__about-link, .main-header__works-link, .main-header__contact-link {
 	text-decoration: none;
 	color: $light-gray;
+	@include helveticaMedium;
+	letter-spacing: 1px;
 }
 
 .main-header__works {
 	text-decoration: none;
-	color: #E8E24C;
+	color: #FDE74C; //E8E24C
+	@include helveticaMedium;
+	letter-spacing: 1px;
 }
 
 .main-header__contact {
 	text-decoration: none;
 	color: #69E84C;
+	@include helveticaMedium;
+	letter-spacing: 1px;
 }
 
 .main-header__link-active {
 	color: $white;
+}
+
+.link-active__home {
+	border-left: 5px solid #2EA1D9;
+	padding-left: 5px;
+}
+
+.link-active__about {
+	border-left: 5px solid #E04863;
+	padding-left: 5px;
+}
+
+.link-active__works {
+	border-left: 5px solid #FDE74C;
+	padding-left: 5px;
+}
+
+.link-active__contact {
+	border-left: 5px solid #69E84C;
+	padding-left: 5px;
+}
+
+.main_header__social {
+	position: relative;
+	left: 0;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.main_header__social-li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 45px;
+	margin-left: -40px;
+}
+
+.main_header__social-links {
+	color: white;
+}
+
+.main_header__social-links:hover {
+	color: #828F9C;
+	@include transition;
+}
+
+.main-header__list:before {
+	content: "";
+	position: absolute;
+	margin-top: -10px;
+	left: -35px;
+	width: 130%;
+	border-top: 1px solid #404B4B;
 }

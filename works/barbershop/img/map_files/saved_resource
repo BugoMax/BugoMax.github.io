@@ -1,0 +1,9 @@
+if (window['google'] != undefined && window['google']['loader'] != undefined) {
+if (!window['google']['elements']) {
+window['google']['elements'] = {};
+google.elements.Version = '1.0';
+google.elements.JSHash = '074c078a6486b42260174dcc80e2ec53';
+google.elements.LoadArgs = 'file\75elements\46v\0751\46packages\75inputtools\46async\0752';
+}
+google.loader.writeLoadTag("script", google.loader.ServiceBase + "/api/elements/1.0/074c078a6486b42260174dcc80e2ec53/inputtools.I.js", true);
+}

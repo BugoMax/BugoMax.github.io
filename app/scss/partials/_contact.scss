@@ -1,0 +1,89 @@
+@import "variables";
+@import "mixins";
+
+.contact {
+	width: 100%;
+	margin-top: -150px;
+}
+
+.contact__content {
+	@include content;
+}
+
+.contact-header__h {
+	@include headerH;
+	@include helveticaMedium;
+	position: relative;
+	margin-top: 150px;
+	margin-left: 45%;
+	top: 50px;
+}
+
+.contact__list {
+	position: relative;
+}
+
+.content__p {
+	font-size: 18px;
+	@include openSans;
+}
+
+.contact__li_social, .contact__li {
+	list-style-type: none;
+}
+
+.contact__li_social {
+	position: relative;
+	width: 100%;
+	background-color: $black;
+}
+
+.contact__social_link {
+	color: #69E84C;
+	margin-left: 16%;
+}
+
+.contact__social_link:hover {
+	color: #828F9C;
+	@include transition;
+}
+
+.contact__li {
+	display: inline-block;
+	width: 40%;
+	min-height: 60px;
+	margin-left: 5%;
+	margin-top: 40px;
+	background-color: $black;
+}
+
+.contact__list_link {
+	display: block;
+	color: #69E84C;
+	font-size: 2.2rem;
+	text-decoration: none;
+	text-align: center;
+	line-height: 55px;
+}
+
+.contact__list_link:hover {
+	color: #828F9C;
+	@include transition;
+}
+
+.contact__li_email {
+	width: 100%;
+	background-color: $black;
+	list-style-type: none;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.contact__link_email {
+	display: block;
+	color: #69E84C;
+	font-size: 2.2rem;
+	text-decoration: none;
+	text-align: center;
+	line-height: 55px;
+}
