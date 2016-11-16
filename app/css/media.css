@@ -1,5 +1,111 @@
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px) {
+  .circle {
+    margin-left: 3%; } }
+
+@media only screen and (max-width: 1200px) {
+  .main-header__name, .main-header__proffesion {
+    margin-left: -90px; }
+  .circle {
+    margin-left: 0.5%; }
+  .main_header__logo-wrap {
+    margin-left: -40px; }
+  .main-header__me {
+    margin-left: 10px; }
+  .main-header__main-photo {
+    margin-left: 20px; }
+  .main-header__links {
+    margin-left: -20px; } }
+
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1100px) {
+  .main-header__name, .main-header__proffesion {
+    font-size: 1rem; }
+  .circle {
+    margin-left: 5%; }
+  .skills__content {
+    width: 65%;
+    margin-left: 30%; }
+  .contact__social_link {
+    font-size: 1rem; }
+  .contact__list_link {
+    font-size: 1.5rem; } }
+
+@media only screen and (max-width: 992px) {
+  .main-header__name, .main-header__proffesion {
+    width: 150px;
+    margin-left: 0; }
+  .main-header__li-link {
+    width: 100px; }
+  .circle {
+    margin-left: 1%; }
+  .skills__progress-bars {
+    margin-right: 20px; }
+  .contact-header__h {
+    text-align: center;
+    margin-left: 30%; }
+  .contact__social_link {
+    margin-left: 10%; }
+  .contact__link_email {
+    font-size: 1.7rem; } }
+
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .main-header__name {
+    width: 100px;
+    margin-left: 10px; }
+  .main-header__main-photo {
+    margin-left: 0; }
+  .main-header__proffesion {
+    margin-left: -15px; }
+  .main_header__social-li {
+    width: 200px; }
+  .about__content {
+    width: 70%;
+    margin-left: 30%; }
+  .circle {
+    position: relative;
+    margin-left: 1%; }
+  .skills__progress {
+    height: auto; }
+  .skills__progress-bars {
+    float: none;
+    margin-left: 20%; }
+  .skills__img {
+    float: none;
+    margin-left: 20%; }
+  .skills__other-plus {
+    width: 35%; } }
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 435px) {
+  .main-header {
+    margin-left: -80px; }
+  .main-header:hover {
+    width: 45%;
+    margin-left: 0; }
+  .home__content {
+    width: 80%; }
+  .home-header__h {
+    margin-left: 15%; }
+  .home-header__img {
+    margin-left: 25%; }
+  .home__content {
+    margin-left: 15%; }
+  .about {
+    margin-left: -300px; }
+  .about__content {
+    width: 70%;
+    margin-left: 100%; }
+  .about-header {
+    margin-left: 100%; }
+  .about-header__h {
+    margin-left: 40%;
+    text-align: center; }
+  .about-header__img {
+    margin-left: 35%; } }
+
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 384px) {
+  .main-header {
+    margin-left: -70px; } }

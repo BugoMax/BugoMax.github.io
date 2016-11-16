@@ -35,11 +35,10 @@
 .contact__li_social {
 	position: relative;
 	width: 100%;
-	background-color: $black;
 }
 
 .contact__social_link {
-	color: #69E84C;
+	color: $black;
 	margin-left: 16%;
 }
 
@@ -54,21 +53,26 @@
 	min-height: 60px;
 	margin-left: 5%;
 	margin-top: 40px;
+	border: 3px solid $black;
+}
+
+.contact__li:hover {
 	background-color: $black;
+	@include transition;
+}
+
+.contact__li:hover .contact__list_link {
+	color: #828F9C;
+	@include transition;
 }
 
 .contact__list_link {
 	display: block;
-	color: #69E84C;
+	color: $black;
 	font-size: 2.2rem;
 	text-decoration: none;
 	text-align: center;
 	line-height: 55px;
-}
-
-.contact__list_link:hover {
-	color: #828F9C;
-	@include transition;
 }
 
 .contact__li_email {
@@ -81,7 +85,7 @@
 
 .contact__link_email {
 	display: block;
-	color: #69E84C;
+	color: white;
 	font-size: 2.2rem;
 	text-decoration: none;
 	text-align: center;

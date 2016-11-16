@@ -8,6 +8,7 @@
 	width: 21.875%;
 	background-color: $gray;
 	overflow-y: auto;
+	z-index: 100;
 }
 
 .main-header::-webkit-scrollbar { height: 0; }
@@ -85,7 +86,8 @@
 	letter-spacing: 1px;
 }
 
-.main-header__about-link, .main-header__works-link, .main-header__contact-link {
+.main-header__about-link, .main-header__works-link,
+.main-header__contact-link {
 	text-decoration: none;
 	color: $light-gray;
 	@include helveticaMedium;
@@ -160,4 +162,8 @@
 	left: -35px;
 	width: 130%;
 	border-top: 1px solid #404B4B;
+}
+
+.main-header__show {
+	display: none;
 }

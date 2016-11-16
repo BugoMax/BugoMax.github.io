@@ -1,8 +1,3 @@
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -27,20 +22,10 @@ body {
   font-family: 'HelveticaNeueCyr-Medium', sans-serif;
 }
 
-/* -------------------------------- 
-
-Patterns - reusable parts of our design
-
--------------------------------- */
 .overflow-hidden {
   overflow: hidden;
 }
 
-/* -------------------------------- 
-
-Header
-
--------------------------------- */
 .cd-header {
   height: 170px;
   line-height: 170px;
@@ -61,11 +46,6 @@ Header
   }
 }
 
-/* -------------------------------- 
-
-Main content
-
--------------------------------- */
 .cd-main {
   overflow-x: hidden;
   width: 79%;
@@ -289,11 +269,6 @@ Main content
   }
 }
 
-/* -------------------------------- 
-
-folding panel
-
--------------------------------- */
 .cd-folding-panel {
   position: fixed;
   z-index: 1;
@@ -620,8 +595,6 @@ Javascript disabled
   transform: translateY(0);
 }
 
-/*   ////////////////   */
-
 .main-header {
   position: fixed;
   height: 100vh;
@@ -629,6 +602,7 @@ Javascript disabled
   width: 21.875%;
   background-color: #1E2124;
   overflow-y: auto;
+  z-index: 100;
 }
 
 .main-header::-webkit-scrollbar { height: 0; }
@@ -836,4 +810,81 @@ Javascript disabled
 
 .main-header__list-3:before {
   margin-top: 90px;
+}
+
+@media only screen and (max-width : 1200px) {
+  .main-header__name, .main-header__proffesion {
+    margin-left: -90px;
+  }
+
+  .main_header__logo-wrap {
+    margin-left: -40px;
+  }
+
+  .main-header__me {
+    margin-left: 10px;
+  }
+
+  .main-header__main-photo {
+    margin-left: 20px;
+  }
+
+  .main-header__links {
+    margin-left: -20px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px) {
+  .main-header__name, .main-header__proffesion {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .main-header__name, .main-header__proffesion {
+    width: 150px;
+    margin-left: 0; 
+  }
+  .main-header__li-link {
+    width: 100px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .main-header__name {
+    width: 100px;
+    margin-left: 10px;
+  }
+
+  .main-header__main-photo {
+    margin-left: 0;
+  }
+
+  .main-header__proffesion {
+    margin-left: -15px;
+  }
+
+  .main_header__social-li {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width : 435px) {
+  .main-header {
+    margin-left: -80px;
+  }
+
+  .main-header:hover {
+    width: 45%;
+    margin-left: 0;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 384px) {
+  .main-header {
+    margin-left: -70px;
+  }
 }
