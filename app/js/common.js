@@ -72,7 +72,7 @@ var cont = canvas.getContext("2d");
 
 var data = [ 100, 145, 125, 160, 130 ]; 
 
-cont.fillStyle = "white";
+cont.fillStyle = "#eeeeee";
 cont.fillRect(10, 20, 580, 370);
 cont.fillStyle = "#E04863";
 for (var i = 0; i < data.length; i++) {

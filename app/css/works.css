@@ -63,6 +63,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+  transform: translateX(11%);
 }
 .cd-main-content.is-fixed .cd-gallery {
   padding-top: 76px;

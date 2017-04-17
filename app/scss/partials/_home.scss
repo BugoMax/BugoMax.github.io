@@ -2,13 +2,14 @@
 @import "mixins";
 
 .home {
-	width: 100%;
+	@include main-content;
 }
 
 .home-header {
 	@include headerBackImg;
 	background: url('/images/bg-home.jpg') no-repeat;
 	background-position: 50% 50%;
+	background-size: cover;
 }
 
 .home-header__img {

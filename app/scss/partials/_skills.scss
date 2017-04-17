@@ -2,7 +2,7 @@
 @import "mixins";
 
 .skills {
-	width: 100%;
+	@include main-content;
 }
 
 .skills-header {
@@ -38,7 +38,7 @@
 .skills__progress-bar {
   width: 260px;
   height: 20px;
-  border: 1px solid white;
+  border: 1px solid #e7e7e7;
   border-radius: 20px;
   background: #eeeeee;
   overflow: hidden;
@@ -59,11 +59,11 @@
 }
 
 .skills__progress-html:before {
-	width: 210px;
+	width: 230px;
 }
 
 .skills__progress-js:before {
-	width: 100px;
+	width: 130px;
 }
 
 .skills__progress-jq:before {
@@ -71,7 +71,7 @@
 }
 
 .skills__progress-angular:before {
-	width: 80px;
+	width: 65px;
 }
 
 .skills__group {
@@ -144,6 +144,10 @@
 	margin-right: 5px;
 }
 
+.skills__group-p.content__p {
+	font-size: 16px;
+}
+
 .fa-forward {
 	position: absolute;
 	right: 0;
@@ -153,7 +157,7 @@
 	display: block;
 	width: 120px;
 	height: 30px;
-	border: 3px solid $black;
+	border: 2px solid $black;
 	text-decoration: none;
 	text-align: center;
 	line-height: 28px;
@@ -185,7 +189,7 @@
 }
 
 .skills__progress-php:before {
-	width: 25px;
+	width: 80px;
 }
 
 .skills__progress-svg:before {
@@ -198,9 +202,11 @@
 
 .skills__link {
 	display: inline-block;
+	position: absolute;
+	right: 7%;
 	width: 120px;
 	height: 30px;
-	border: 3px solid $black;
+	border: 2px solid $black;
 	text-decoration: none;
 	text-align: center;
 	line-height: 28px;
@@ -233,8 +239,21 @@
 
 .skills__proof {
 	margin-top: 100px;
+	position: relative;
+}
+
+.skills__proof p {
+	margin-bottom: 22px;
 }
 
 .proof__sign {
 	margin-left: 20px;
+}
+
+.other-plus__p .fa-plus-circle {
+	@include transition;
+}
+
+.other-plus__p .fa-plus-circle:hover {
+	transform: rotate(90deg);
 }

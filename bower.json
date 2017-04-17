@@ -1,0 +1,21 @@
+{
+  "name": "mrozhaev",
+  "description": "Description",
+  "main": "app/html/index.html",
+  "authors": [
+    "mrozhaev"
+  ],
+  "license": "MIT",
+  "homepage": "git+https://github.com/BugoMax/BugoMax.github.io.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-scss": "normalize.scss#^6.0.0",    
+    "components-font-awesome": "^4.7.0"
+  }
+}

@@ -2,8 +2,13 @@
   "name": "mrozhaev",
   "version": "1.0.0",
   "description": "My site portfolio.",
-  "main": "index.js",
-  "dependencies": {},
+  "main": "app/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "begin": "npm install && bower install && MOVE ./src/bower/components-font-awesome/fonts ./src/fonts",
+    "start": "gulp",
+    "build": "rm -rf build && gulp b"
+  },
   "devDependencies": {
     "browser-sync": "^2.17.5",
     "del": "^2.2.2",
@@ -17,9 +22,6 @@
     "gulp-sass": "^2.3.2",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^5.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

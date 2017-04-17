@@ -2,8 +2,7 @@
 @import "mixins";
 
 .contact {
-	width: 100%;
-	margin-top: -150px;
+	@include main-content;
 }
 
 .contact__content {
@@ -12,11 +11,8 @@
 
 .contact-header__h {
 	@include headerH;
-	@include helveticaMedium;
-	position: relative;
-	margin-top: 150px;
-	margin-left: 45%;
-	top: 50px;
+	top: 20px;
+	margin-top: 0;
 }
 
 .contact__list {

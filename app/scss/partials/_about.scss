@@ -2,7 +2,7 @@
 @import "mixins";
 
 .about {
-	width: 100%;
+	@include main-content;
 }
 
 .about-header {
@@ -16,7 +16,6 @@
 
 .about-header__h {
 	@include headerH;
-	margin-left: 47%;
 }
 
 .about__content {
@@ -26,7 +25,7 @@
 .circles {
 	position: relative;
 	width: 100%;
-  margin-bottom: 80px;
+  	margin-bottom: 80px;
 }
 
 .circle {
