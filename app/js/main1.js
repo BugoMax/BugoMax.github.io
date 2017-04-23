@@ -6,6 +6,18 @@ jQuery(document).ready(function($){
 	  	}
 	});
 
+	// show, hidden code
+
+	$('.show-code').click(function() {
+		$(this).next().slideToggle('fast');
+	});
+
+	// show hint 
+
+	$('.hint-circle').click(function() {
+		$(this).next().slideToggle('fast').css('display', 'table');
+	});
+
 	//open project
 	$('.cd-single-project').on('click', function(){
 		var selectedProject = $(this),
