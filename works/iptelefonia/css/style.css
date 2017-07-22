@@ -729,7 +729,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: block;
   width: 100px;
   height: 100px;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
@@ -832,7 +832,6 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-event {
   position: relative;
-  padding-left: 120px;
   width: 100%;
   float: left;
   margin-bottom: 30px;
@@ -884,7 +883,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-  height: 270px;
+  height: 180px;
 }
 .fh5co-blog .blog-text {
   position: relative;
@@ -1639,3 +1638,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+#our-service ul {
+  text-align: left;
+}
