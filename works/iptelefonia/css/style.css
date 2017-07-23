@@ -1725,3 +1725,18 @@ div#page #fh5co-course-categories {
   margin-bottom: 10px;
   color: #000;
 }
+
+.modal-pop-up input.btn-submit {
+  display: block;
+  margin: 0 auto;
+  background-color: #2D6CDF;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  #fh5co-testimonial .item {
+    text-align: center;
+  }
+}
