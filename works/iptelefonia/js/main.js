@@ -294,3 +294,31 @@
 
 
 }());
+
+
+document.addEventListener('DOMContentLoaded', function() {
+	var btnPopUp    = document.querySelectorAll('.mail-container');
+	var popUp       = document.querySelector('.modal-pop-up');
+	var popBack     = document.querySelector('.modal-pop-up-back');
+	var closePopUp  = document.querySelector('.close-modal-pop');
+
+	function openPop() {
+		popUp.style.display = 'block';
+		popBack.style.display = 'block';
+		document.documentElement.style.overflowY = 'hidden';
+	}
+
+	function closePop() {
+		popUp.style.display = 'none';
+		popBack.style.display = 'none';
+		document.documentElement.style.overflowY = 'auto';
+	}
+	
+	btnPopUp.forEach(function(item) {
+		item.addEventListener('click', openPop);
+	});
+
+	closePopUp.addEventListener('click', closePop);
+	popBack.addEventListener('click', closePop);
+});
+

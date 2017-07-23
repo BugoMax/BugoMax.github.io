@@ -278,9 +278,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-hero {
-  min-height: 630px;
-  height: 630px;
+  min-height: 540px;
+  height: 540px;
   background: #fff url(../images/loader.gif) no-repeat center center;
+}
+#fh5co-her .flex-viewport {
+  height: 540px !important;
 }
 #fh5co-hero .btn {
   font-size: 24px;
@@ -301,8 +304,8 @@ h1, h2, h3, h4, h5, h6, figure {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  min-height: 630px;
-  height: 630px;
+  min-height: 540px;
+  height: 540px;
   position: relative;
 }
 #fh5co-hero .flexslider .slides li:after {
@@ -333,11 +336,14 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-hero .flexslider .flex-direction-nav {
   display: none;
 }
+div#page #fh5co-course-categories {
+  padding-top: 25px;
+}
 #fh5co-hero .flexslider .slider-text {
   display: table;
   opacity: 0;
-  min-height: 630px;
-  height: 630px;
+  min-height: 540px;
+  height: 540px;
   z-index: 9;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner {
@@ -1641,4 +1647,81 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #our-service ul {
   text-align: left;
+}
+
+#fh5co-testimonial .item {
+  margin-bottom: 20px;
+}
+
+#fh5co-course .course .course-img {
+  background-size: contain;
+}
+
+
+#fh5co-course .course:hover .course-img {
+  background-size: contain;
+  box-shadow: inset 0px 5px 15px -4px rgba(0, 0, 0, 0.74);
+}
+
+#fh5co-course .course .desc {
+  height: 240px;
+}
+
+.modal-pop-up {
+    position: fixed;
+    display: none;
+    width: 320px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    z-index: 300;
+    -webkit-transform: translateY(70%);
+    -ms-transform: translateY(70%);
+    transform: translateY(70%);
+    border-radius: 5px;
+}
+
+.modal-pop-up-back {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(58, 70, 92, .8);
+    z-index: 200;
+}
+
+.close-modal-pop {
+    position: absolute;
+    top: -35px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/close-modal.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.close-modal-pop img {
+  width: 100%;
+}
+
+.modal-pop-up form {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.modal-pop-up h3 {
+  margin: 15px auto;
+}
+
+.modal-pop-up input {
+  padding: 5px 10px;
+  background-color: aliceblue;
+  outline: none;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  color: #000;
 }
